@@ -55,6 +55,17 @@ colour-coded badge, so you always know where it came from.
       choice.
     </td>
   </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>Recently played</h3>
+      Everything you listened to, from both services, grouped by day, with one-click <b>Jump back in</b> to the
+      playlists you played from.
+    </td>
+    <td width="50%" valign="top">
+      <h3>Resume where you left off</h3>
+      Close the app mid-song and it comes back paused at the same spot, with your whole queue intact.
+    </td>
+  </tr>
 </table>
 
 | Split View | Hybrid playlists |
@@ -74,6 +85,7 @@ colour-coded badge, so you always know where it came from.
         <li>Double-click any entry to jump straight to it</li>
         <li>Your picks play before the rest of the playlist, and shuffle leaves them where they are</li>
         <li>Swap the playing track for a live, remix or slowed version with <b>Change version</b></li>
+        <li><b>Picks up where you left off</b>: your queue and the song you were on come back after a restart</li>
       </ul>
     </td>
     <td width="45%" valign="top">
