@@ -5,7 +5,7 @@
 <h1 align="center">SpotiTube</h1>
 
 <p align="center">
-  <b>Your Spotify and YouTube Music libraries in one desktop player — with a real-time audio studio built in.</b>
+  <b>Your Spotify and YouTube Music libraries in one desktop player — with a queue you're in charge of.</b>
 </p>
 
 <p align="center">
@@ -21,7 +21,7 @@
 </p>
 
 <p align="center">
-  <img src="assets/library.png" alt="SpotiTube library with Spotify and YouTube Music playlists side by side and the Audio Studio open" />
+  <img src="assets/library.png" alt="SpotiTube library with Spotify and YouTube Music playlists, the queue open on the right and the YouTube player docked in the sidebar" />
 </p>
 
 ---
@@ -61,33 +61,40 @@ colour-coded badge, so you always know where it came from.
 | --- | --- |
 | ![Spotify and YouTube Music playlists in parallel columns](assets/split-view.png) | ![Adding a track to a new hybrid playlist](assets/hybrid-playlists.png) |
 
-## Make it sound the way you like
+## Your queue, your rules
 
-The **Audio Studio** is a real-time effects rack for whatever is playing:
-
-- **Nightcore** and **Slowed + Reverb** in one click
-- **Speed** from 0.5× to 2× — keep the pitch, or let it follow like a turntable
-- **Pitch shift** of ±12 semitones, independent of speed
-- **10-band equalizer** with presets (Bass Boost, Vocal, Electronic, …) and your own
-- **Reverb** with adjustable size, pre-delay and damping
-- **A-B loop** to repeat any part of a song — great for practising
-- **Per-track memory**: every track remembers its own EQ, speed, pitch and loop
-
-<p align="center">
-  <img src="assets/audio-studio.png" alt="Audio Studio with Slowed + Reverb, a Bass Boost EQ curve and an A-B loop" />
-</p>
-
-> **Good to know:** effects need direct access to the audio stream. YouTube currently limits that for apps, so
-> tracks often play through **YouTube's official player** instead (shown in a small window). Speed, A-B loops and
-> version picking still work there. EQ, pitch and reverb switch back on automatically whenever a direct stream is
-> available, and your settings are kept until then.
+<table>
+  <tr>
+    <td width="55%" valign="top">
+      <ul>
+        <li><b>Play next</b> or <b>Add to queue</b> on any track: right-click it, or use the <b>⋯</b> button</li>
+        <li>Mix tracks from Spotify and YouTube Music in the same queue</li>
+        <li><b>Drag &amp; drop</b> to reorder, or <code>Alt</code> + <code>↑</code> / <code>↓</code></li>
+        <li>Remove single tracks, clear what you queued, or clear everything</li>
+        <li>Double-click any entry to jump straight to it</li>
+        <li>Your picks play before the rest of the playlist, and shuffle leaves them where they are</li>
+        <li>Swap the playing track for a live, remix or slowed version with <b>Change version</b></li>
+      </ul>
+    </td>
+    <td width="45%" valign="top">
+      <img src="assets/queue.png" alt="Queue panel with the playing track and reorderable upcoming tracks" />
+    </td>
+  </tr>
+</table>
 
 ## Feels like a native app
 
-- Frameless, dark window designed for OLED screens, with a glow that follows the album art
+- **Taskbar controls**: hover over SpotiTube in the Windows taskbar to skip or pause, just like Spotify. On macOS
+  the same controls are in the Dock menu.
+- The current song appears in the window title, so you see it in the taskbar and when switching apps
 - Media keys, system media controls and a tray menu
-- Keyboard shortcuts for everything: `Space`, `←` `→`, `Ctrl+F`, `Ctrl+E`, …
+- Frameless, dark window designed for OLED screens, with a glow that follows the album art
+- Keyboard shortcuts for everything: `Space`, `←` `→`, `Ctrl+F`, `Ctrl+E` (queue), …
 - **Updates itself**: new versions download in the background and install with one click
+
+> **Good to know:** YouTube currently doesn't let apps stream complete tracks directly, so most tracks play through
+> **YouTube's official player**. It must stay visible, but you can make it compact, move it to any corner, or dock it
+> in the sidebar where it covers nothing.
 
 ## Get started in a minute
 
@@ -130,10 +137,11 @@ artist, same length, and no covers or remixes unless you ask for one. You can al
 </details>
 
 <details>
-<summary><b>Why are EQ and pitch sometimes greyed out?</b></summary>
+<summary><b>Why is there a small YouTube player?</b></summary>
 
-They need a direct audio stream, which YouTube currently restricts for apps. In that case SpotiTube plays the track
-through YouTube's official player so it never cuts out. SpotiTube does not try to get around YouTube's protections.
+YouTube currently doesn't let apps stream complete tracks directly, so SpotiTube plays them through YouTube's
+official player, which never cuts out. SpotiTube does not try to get around YouTube's protections. YouTube requires
+the player to stay visible, but you can make it compact, move it to any corner, or dock it in the sidebar.
 </details>
 
 <details>
@@ -154,8 +162,8 @@ then the app links you to the new download instead.
 <details>
 <summary><b>Something doesn't play or sounds wrong.</b></summary>
 
-Open the **Audio Studio**, go to **Stream source** and pick another version of the track. SpotiTube remembers your
-choice. If a problem persists, please describe it in a new issue in this repository.
+Open the **queue** and use **Change version** under the playing track to pick another upload. SpotiTube remembers
+your choice. If a problem persists, please describe it in a new issue in this repository.
 </details>
 
 ---
